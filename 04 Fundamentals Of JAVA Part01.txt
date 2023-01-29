@@ -1,0 +1,84 @@
+                                       FUNDAMENTALS OF JAVA 01 [Assignment Questions/Answers]     26 JAN’ 23
+
+ANS 01:
+
+         Programming Language:-
+                  A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks. Programming languages is a type of language, using which interacts user to machine or hardware.Using the  programming language way to communicate with hardware.
+Some Programming languages- JAVA, PYTHON, C, C++, JAVASCRIPT, C#, R, PASCAL, PHP, KOTLIN,SWIFT, .NET etc.
+
+ANS 02:
+            Need of programming language:-
+There are some following needs of Programming language-
+Solve real world problems.
+Easy to work and fast.
+Save time and accuracy.
+Solve Different hard problems and operate and handle situations.
+
+
+ANS 03: 
+          
+            There are following most important features of java-
+*Simple
+*Object-Oriented
+*Platform Independent
+*Portable
+*Robust
+*Secure
+*Interpreted
+*Multi-Threaded
+
+
+
+ANS 04:
+
+            OBJECT:
+                           A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behaviour and a state.
+The state of an object is stored in fields (variables), while methods (functions) display the object's behaviour. Objects are created at runtime from templates, which are also known as classes.
+In Java, an object is created using the keyword "new".
+ Ex-  if Person is an object-
+
+Syntax to declare a Object:
+* Person p = new person();
+
+
+
+  ANS 05:
+
+        CLASS: 
+                 A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity.
+A class in Java can contain:
+Fields, Method, Constructors, Blocks, Nested class and interface
+
+
+Syntax to declare a class:
+  Class Vehicle
+{
+    //class body
+}
+
+                                  
+
+ANS 06: 
+             Main method in JAVA:-
+
+In Java programs, the point from where the program starts its execution or simply the entry point of Java programs is the main() method. Hence, it is one of the most important methods of Java and having a proper understanding of it is very important.
+
+The Java compiler or JVM looks for the main method when it starts executing a Java program. The signature of the main method needs to be in a specific way for the JVM to recognize that method as its entry point. If we change the signature of the method, the program compiles but does not execute.
+
+
+
+class  Demo  
+{  
+static                  //static block  
+{  
+System.out.println("Static block");  
+}  
+public static void main(String args[])  //static method  
+{  
+System.out.println("Static method");  
+}  
+}  
+
+
+
+
