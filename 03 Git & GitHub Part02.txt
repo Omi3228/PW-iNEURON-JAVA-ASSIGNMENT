@@ -1,0 +1,48 @@
+                                                        GIT & GITHUB Part 2 [Assignment Question/Answers]        24/JAN/2023
+
+ANS 01: 
+                 Using Command we can easily check the git is available or not-
+                     $ git version /git --version
+Ans 02:
+             Initialise new Git Repository-
+              $ git init
+
+Ans 03:
+             Using Git Configuration we can tell Git about your name and your email-
+
+              $ git config --global user.name “SHRI OM TIWARI”   [NAME]
+              
+               $ git config --global user.email “tiwarishri9305@gmail.com”   [E-MAIL]
+
+ANS 04:
+            Add a file to the staging area-
+             
+            If we have 2 files pw1.java, pw2.java-
+
+For staging all files- $ git add .
+For staging on by one file- $ git add pw1.java
+                                           $ git add pw2.java
+
+ANS 05:
+             Firstly we turn the staging area to Unstaging area (Staging area to Working Area)and then   using rm command we can remove the files-
+ $ git rm --cached <file>
+
+
+ANS 06: 
+              Commit command-
+                                              $ git commit -m “THIS IS MY COMMIT”
+
+
+ANS 07:
+                Using following steps send your changes to a remote repository-
+$ git init
+$ git status
+$ git add .
+$ git commit -m “THIS IS COMMIT FOR REPO”
+$ git push
+
+
+ANS 08:
+             Clone is a copy of project. Developers makes lot of the copy / clone of the any projects.Developers make the copy of project as a clone in the local directory/system.
+
+              Pull is a request for server to give the updated version copy of the project in the developer local system/repository.
