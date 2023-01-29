@@ -1,0 +1,73 @@
+                                                                 Computer Basics [Assignment Questions/Answers]     22 JAN’23
+
+
+ANS 01:
+        COMPUTER:
+
+         A computer is a machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern digital electronic computers can perform generic sets of operations known as programs.These programs enable computers to perform a wide range of tasks.
+    Computer understand binary language 0 and 1.
+
+
+ANS 02:
+       RAM:
+
+RAM (random access memory) is a computer's short-term memory, where the data that the processor is currently using is stored. Your computer can access RAM memory much faster than data on a hard disk, SSD, or other long-term storage device, which is why RAM capacity is critical for system performance.
+
+ANS 03:
+
+       Data is copied from the computer's main memory (random-access memory or RAM), and then written to the hard disk. The drive is the mechanical device that writes the data to the disk.
+
+
+ANS 04:
+
+      KEYBOARD
+
+
+ANS 05:
+OUTPUT DEVICES:
+      
+LCD Projection Panels.
+Monitor (LED, LCD, CRT etc)
+Printers (all types)
+Plotters.
+Microfiche.
+Projector.
+Head Phone.
+etc
+
+
+ANS 06:
+       MOUSE
+
+
+ANS 07:
+       Machine language gives instructions as 0's and 1's and is the only language that the computer understands.
+
+
+ANS 08:
+INPUT DEVICES:
+       
+Graphics Tablets
+Video Capture Hardware
+Trackballs
+Barcode reader
+Digital camera
+MIDI keyboard
+Gamepad
+Joystick
+Keyboard
+Cameras
+Microphone
+Mouse (pointing device)
+Scanner
+Webcam
+Touchpad’s
+Microphone
+Electronic Whiteboard
+OMR
+OCR
+Pen Input
+Punch card reader
+MICR (Magnetic Ink character reader)
+Magnetic Tape Drive
+etc.
