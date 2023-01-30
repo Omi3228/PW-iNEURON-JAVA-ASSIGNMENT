@@ -210,6 +210,7 @@ The iteration statement in a 'while' loop can be written anywhere in the loop.
 
 
 ANS 09:
+PRINT 1 to 10 numbers using for loop:
 
  public class Use_For_Loop
 {
