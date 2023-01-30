@@ -1,0 +1,223 @@
+                                                                                                   FUNDAMENTALS OF JAVA 01 [Assignment Questions/Answers]     28 JAN’ 23
+
+
+
+
+ANS 01:
+Conditional Operator in Java:
+
+In Java, conditional operators check the condition and decides the desired result on the basis of both conditions. In this section, we will discuss the conditional operator in Java.
+
+Types of Conditional Operator
+There are three types of the conditional operator in Java:
+
+1) Conditional or Logical AND	 &&
+2) Conditional or Logical OR  	||
+3) Ternary Operator 	?:
+
+
+ANS 02:
+           Types of operators based on the number of operands:
+
+There are two types of mathematical operators: unary and binary. Unary operators perform an action with a single operand. Binary operators perform actions with two operands.
+
+
+ANS 03:
+             The switch case in java is used to select one of many code blocks for execution.
+
+Break keyword: As java reaches a break keyword, the control breaks out of the switch block. The execution of code stops on encountering this keyword, and the case testing inside the block ends as the match is found. A lot of execution time can be saved because it ignores the rest of the code's execution when there is a break.
+
+Syntax: 
+
+switch(expression)
+{    
+case value1:    statement_1; break;
+    
+case value2:    statement_2; break;
+
+.....
+......
+......
+case value_n:    statement_n; break;
+
+
+default:     default statement;
+ 
+}    
+
+
+
+
+ANS 04:
+
+ 	              PERIORITY LEVEL: ->        *,   /,   +,    -              (left to right)
+
+
+
+ANS 05:  
+
+       Conditional Statements in Java:
+The conditional statement is a branch of code that can be executed depending on another condition. In Java, these clauses are called decision or selection statements.
+
+There are three types of Java conditional statements:-
+
+-> 1. If statement
+
+-> 2. If-Else statement
+
+-> 3. If-Else-If Ladder statement
+
+-> 4. Nested If statement
+
+-> 5. Switch statement
+
+
+  1)   
+
+Syntax of If Statement :
+
+if (expression) {
+    // You can enter the code here
+}
+
+
+2)
+
+Syntax of If-Else Statement :
+
+if (condition) {
+    // Statements that will be carried out if the condition is satisfied
+} else {
+    // Statements that will be carried out if the condition is not met
+}
+
+
+3)
+
+Syntax of If-Else-If Ladder Statement :
+
+if (condition1) { 
+    // Executable code if condition1 is true,
+} else if (condition2) { 
+    // Executable code if condition2 is true  
+} 
+
+... 
+else { 
+    // Executable code if all the conditions are false  
+}
+
+4)
+
+Syntax of Nested If Statement :
+
+if (condition1) {   
+    // Statement 1 will execute
+      
+    if (condition2)   {      
+      // Statement 2 will execute
+    }
+}
+
+
+5)
+
+Syntax of Switch Statement :
+
+switch (Expression) {
+    case value 1:
+        // Statement 1;
+    case value 2:
+        // Statement 2;
+    case value 3:
+        // Statement 3;
+        
+        	...
+    case value n:
+        // Statement n;
+    Default:
+        // default statement;
+}
+
+
+
+
+
+ANS 06:
+
+Syntax of If-Else Statement :
+
+if (condition) {
+    // Statements that will be carried out if the condition is satisfied
+} else {
+    // Statements that will be carried out if the condition is not met
+}
+
+
+
+ANS 07:
+            The java programming language provides a set of iterative statements that are used to execute a statement or a block of statements repeatedly as long as the given condition is true. The iterative statements are also known as looping statements or repetitive statements. Java provides the following iterative statements.
+
+*while statement
+*do-while statement
+*for statement
+//*for-each statement
+
+
+ANS 08:
+  Difference between For Loop and While loop:	
+
+                                                                
+for-loop:---->
+
+Parameters -> Declaration	for(initialization ; condition ; iteration ) {
+                                                         //body of 'for' loop
+                                                           }	
+
+Format:	At the top of the loop, initialization, condition checking, and iteration statements are written.
+
+Use :	The 'for' loop was only used when the number of iterations was already known.
+
+Condition:  If the condition is not included in the 'for' loop, the loop iterates  indefinitely.
+
+Initialization: The initialization is never repeated in a 'for' loop.
+
+Iteration assertion: Because the iteration statement in the 'for' loop is written at the top, it executes only after all statements in the loop have been executed.
+
+	
+
+
+
+While Loop---->    
+
+initialization
+while ( condition ) {
+statements;
+//body of loop
+}
+
+At the top of the loop, only initialization and condition checking are performed.
+
+When the number of iterations is unknown, the 'while' loop is used.
+
+If the condition is not included in the 'while' loop, a compilation error occurs.
+
+If initialization is performed during condition checking in a while loop, initialization is performed each time the loop iterates.
+
+The iteration statement in a 'while' loop can be written anywhere in the loop.
+
+
+
+
+ANS 09:
+
+ public class Use_For_Loop
+{
+    public static void main(String[] args)
+    {
+        for(int i = 1; i <= 10; i++)
+        {
+            System.out.println(i);
+        }
+    }
+}
