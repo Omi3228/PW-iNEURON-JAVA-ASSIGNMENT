@@ -1,0 +1,474 @@
+                                              Pattern Programming [Assignment Questions/Answers]     29 JAN’ 23
+
+
+
+
+public class PatternAssignment {
+
+    public static void main(String[] args) {
+
+
+//        Solution 01:
+//        Print A B C D E F G H---------------->
+
+
+//        A
+
+//      int n = 9;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if (i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 || i==(n-1)/2 && j<=(n-1)/2 || j==(n-1)/2 && i>0){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+
+
+//        B
+
+
+//        int n = 19;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if ( i==0 && j<(n-1)/2 || j==0 || i ==n-1 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<n-1 ||
+//                        i ==(n-1)/2 && j<(n-1)/2){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+
+//   C
+
+
+//        int n = 9;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if ( i==0 && j>0 || j==0 || i==n-1){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+            //D
+
+
+//        int n = 9;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if (  i==0 && j<(n-1)/2 || j==0 || i ==n-1 && j<(n-1)/2 || j==(n-1)/2 && i>0 && i<n-1){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+        // E
+
+//        int n = 5;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if (i==0 || j==0 || i== n-1  || i==(n-1)/2){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+
+        //F
+
+
+//
+//        int n1= 5;
+//        for (int i =0; i<n1; i++){
+//            for (int j =0; j<n1; j++){
+//                if (i==0 || j==0 ||  i==(n1-1)/2){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+
+//G
+
+
+//        int n= 9;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if (i==0 || j==0 || i==n-1 ||  j== (n-1) && i>(n-1)/2 || i==(n-1)/2 && j> (n-1)/2){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+
+
+        //H
+
+//        int n= 9;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if (j==0 || j==n-1 || i== (n-1)/2 ){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+
+//SOLUTION 02:
+
+//print Triangle------------------------->
+
+/*
+        int n= 16;
+        for (int i =0; i<n; i++){
+            for (int j =0; j<n; j++){
+                if ( i==j && i>=(n-1)/2 ||  i+j==n-1 && i>=(n-1)/2 || i==n-1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+            System.out.println();
+        }
+
+*/
+
+
+
+
+//   SOLUTION 03: ------------>
+
+//        int n= 7;
+//        for (int i =0; i<n; i++){
+//            for (int j =0; j<n; j++){
+//                if ( i == 0 && j < (n - 1)/2 || j == 0 && i > (n - 1) / 2 || i + j <= (n - 1) / 2 ||
+//                        i==0 && j<(n-1)/2 || j==n-1 && i>(n-1)/2 || j-i>=(n-1)/2 || i==n-1){
+//                    System.out.print("*");
+//                }
+//                else{
+//                    System.out.print(" ");
+//                }
+//
+//            }
+//            System.out.println();
+//        }
+//
+
+
+
+//SOLUTION 04:
+//PW SKILLS----------------->
+/*
+        
+//P
+        int n= 8;
+        for (int i =0; i<n; i++){
+            for (int j =0; j<n; j++){
+                if (i==0 && j<=(n-1)/2 || j==0 || i==(n-1)/2 && j<= (n-1)/2 || j==(n-1)/2 && i<=(n-1)/2 ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//W
+            System.out.print("  ");
+            for (int j =0; j<n; j++) {
+                if ( j==0 ||  j==n-1 || i==j && i>=(n-1)/2 ||  i+j==n-1 && i>=(n-1)/2  )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+
+//S
+          System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( i==0 || i ==n-1 || i==(n-1)/2 || j==0 && i<=(n-1)/2 || j==n-1 && i>=(n-1)/2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+
+//K
+            System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( j==0 || i+j ==(n-1)/2 || i-j ==(n-1)/2  ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//I
+             System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( i==0 || i==n-1 || j==(n-1)/2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//L
+           System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( j==0 || i==n-1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//L
+             System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( j==0 || i==n-1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//S
+            System.out.print(" ");
+            for (int j =0; j<n; j++){
+                if ( i==0 || i ==n-1 || i==(n-1)/2 || j==0 && i<=(n-1)/2 || j==n-1 && i>=(n-1)/2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+            System.out.println();
+        }
+
+
+
+*/
+        
+//SOLUTION 05:
+// SHRI OM TIWARI
+
+/*
+//S
+
+        int n= 9;
+        for (int i =0; i<n; i++){
+            for (int j =0; j<n; j++){
+                if (  i==0 || i ==n-1 || i==(n-1)/2 || j==0 && i<=(n-1)/2 || j==n-1 && i>=(n-1)/2 ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+//H
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if (  j==0 || j==n-1 || i==(n-1)/2 ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//R
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if ( i==0 && j<=(n-1)/2 || j==0 || i==(n-1)/2 && j<= (n-1)/2 || j==(n-1)/2 && i<=(n-1)/2 || i-j ==(n-1)/2       ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+
+//I
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if (   i==0 || i==n-1 || j==(n-1)/2      ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+//O
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if (   i==0 || j==0 || j==n-1 || i==n-1  ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+
+            }
+//M
+            System.out.print("  ");
+
+            for (int j =0; j<n; j++) {
+                if (j==0 || j==n-1 || i==j && i<=(n-1)/2 || i+j==n-1 && i<=(n-1)/2 )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+//T
+            System.out.print("  ");
+
+            for (int j =0; j<n; j++) {
+                if (i==0 || j==(n-1)/2 )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+//I
+
+            System.out.print("  ");
+
+            for (int j =0; j<n; j++) {
+                if ( i==0 || i== n-1 || j==(n-1)/2 )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+//W
+
+            System.out.print("  ");
+            for (int j =0; j<n; j++) {
+                if ( j==0 ||  j==n-1 || i==j && i>=(n-1)/2 ||  i+j==n-1 && i>=(n-1)/2  )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+//A
+            System.out.print("  ");
+            for (int j =0; j<n; j++) {
+                if ( i==0 && j>0 && j<(n-1)/2 || j==0 && i>0 || i==(n-1)/2 && j<=(n-1)/2 || j==(n-1)/2 && i>0 )  {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+//R
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if ( i==0 && j<=(n-1)/2 || j==0 || i==(n-1)/2 && j<= (n-1)/2 || j==(n-1)/2 && i<=(n-1)/2 || i-j ==(n-1)/2       ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+
+
+//I
+            System.out.print("    ");
+
+            for (int j =0; j<n; j++){
+                if (   i==0 || i==n-1 || j==(n-1)/2      ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+
+            }
+
+            System.out.println();
+    }
+
+
+*/
+
+
+
+
+
+    }
+}
