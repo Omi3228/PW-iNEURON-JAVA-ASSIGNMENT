@@ -1,0 +1,129 @@
+
+                                         Fundamentals Of OOP's  [Assignment Question/Answers]        30 /JAN/2023
+
+
+ANS 01:
+
+           Using new keyword we can create an object:
+            <className>  <object name>  =  <new keyword>  <class name()>
+
+         EXAMPLE->
+
+     //   if Student is a class-
+       class Student{
+   
+int age;
+String name;    
+
+    public static void main (String[] args){
+
+Student obj = new Student();
+
+ System.out.println(obj.name);
+        System.out.println(obj.age);
+
+
+}
+
+}
+
+
+
+ANS 02:
+ 
+* New keyword is used to allocate memory for an object.
+* New key word is used to create an instance of the class.
+* It creates a java object and allocates memory for it on the heap. 
+
+                     Car obj = new Car();            [Create a Car class Object]
+
+
+
+ANS 03:
+
+ Types Of Variables:
+
+-> Static Variables
+-> Instance Variable 
+-> Local Variable
+
+
+ANS 04:
+
+Difference between Instance Variable and Local Variable:
+
+*Instance Variable are declared within a class but outside a method ,constructor or block and always get a default value.
+*These variables are destroyed when the object is distroyed. 
+*It can be accessed throughout the class.  
+*They are used to reserving memory for data that the class needs and that too for the lifetime of the object.
+*It is not compulsory to initialize instance variables before use. 
+*It includes access modifiers such as private, public, protected, etc. 
+
+VS
+
+*Local variables are declared within a method but do not get any dafault value. 
+*These variables are destroyed when the constructor or method is exited.
+*Its access is limited to the method in which it is declared.
+*They are used to decreasing dependencies between components I.e., the complexity of code is decreased.
+*It is important to initialize local variables before use.
+*It does not include any access modifiers such as private, public, protected, etc.
+
+
+
+ANS 05:
+
+Heap Area memory is allocated for Instance variable and Stack area memory is allocated for Local variable.
+
+
+Ans 06:
+
+Method Overloading:
+Method overloading is a feature in java that allows a class to have more than one method with the same name,but with different parameters.
+
+
+
+
+EXAMPLE: 
+
+class calc{
+    public int add (int n1, int n2){   //two parameters
+
+        int result = n1+n2;
+        return result;
+    }
+
+    public int add (int n1, int n2, int n3){   //three parameters
+
+        int result = n1+n2 +n3;
+        return result;
+    }
+
+    public double add (double n1, double n2){    //two parameters
+
+        double result = n1+n2;
+        return result;
+    }
+}
+
+
+public class MethOvld {
+    public static void main(String[] args) {
+
+        calc obj = new calc();
+
+        int result =  obj.add(4,3);
+        int result1 =  obj.add(4,3,8);
+        double result2 = obj.add(6.9 ,6.9);
+
+        System.out.println(result);
+        System.out.println(result1);
+        System.out.println(result2);
+
+
+    }
+}
+ 
+   
+
+
+
