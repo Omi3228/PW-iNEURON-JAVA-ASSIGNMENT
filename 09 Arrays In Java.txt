@@ -1,0 +1,116 @@
+                                                  Array in Java & Concepts [Assignment Questions/Answers]     01 Feb’23
+
+
+ANS 01:
+
+ARRAY-------->
+
+An array is a container object that holds a fixed number of values of a single type or we can say Java array is an object which contains elements of a similar data type.
+*Array is collection of similar data type.
+
+There are Three types of Array:
+a) 1 -Dimensional || Single Dimensional Array
+b) 2- Dimensional Array
+c) Jagged Array
+
+
+
+ANA 02:
+
+Create an array using New Operator or New Keyword ----------->
+
+<Data type> <NameOfArray []> = new <type of object || Data type [initialize the number of row and column]>
+
+Example:-
+
+Using Noraml declaration Approach:
+int nums[] = {12, 23, 5, 6}
+String names[] = {"Navin Reddy", "Hyder Abbas", "Shri Om Tiwari", "Manvi"}
+
+# 1D Array:
+ int nums[] = new int[4] ;
+
+# 2D Array:
+int num[][] = new int[3][2] ;
+
+# jagged Array:
+        int nums[][] = {
+                {5,2,8,6},
+                {9,7},
+                {2,8,0}
+};
+
+
+ANS 03:
+
+An Array is a data structure/container/object that stores a fixed-size sequential collection of elements of the same type.The size /length of the array is determined at the time of creation.
+the position of element in array is called as index or subscript. start from 0 and so on.
+
+If we create an array by initializing its value directly,the size will be the number of elements in it. Thus the size of the array is determined at the time of its creation or, initializing once it is done you cannot change the size of the array.
+
+
+ANS 04:
+Yes, we can declare an array withot size but before using it needs to be initialized.
+
+
+ANS 05:
+
+Java will assign the default value 0 to each element of the array in the case of an int array.
+case of boolean array -> false
+case of char -> default value is (\u0000).
+
+
+ANS 06:
+
+A 1-D array is the simplest form of an array in which the elements are stored linearly and contiguous memory location and can be accessed individually by specifying the index value of each element stored in the array.
+
+The data is stored in a contiguous manner,which makes operation like search,delete,insert etc.,much easier.
+
+Example:
+
+ int Student[] = {5,6,7,9};
+
+        System.out.println(Student[0]);
+        System.out.println(Student[1]);
+        System.out.println(Student[2]);
+        System.out.println(Student[3]);       //we can print it using for loop
+
+
+we can use String also-
+String Student[] = {"SHRI","HARI","VISHNU"}; //print using one by one or using for loop
+
+
+
+ANS 07:
+
+2-D Array Program: --------------------->
+
+
+
+public class ArrayConcepts {
+    public static void main(String[] args) {
+
+
+        int nums[][]= new int[3][2] ;
+
+        nums[0][0] = 5;
+        nums[0][1] = 6;
+        nums[1][0] = 7;
+        nums[1][1] = 0;
+        nums[2][0] = 4;
+        nums[2][1] = 2;
+
+        for (int i = 0; i<=2; i++){
+            for (int j = 0; j<=1; j++){
+
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+}
+
+
+ 
