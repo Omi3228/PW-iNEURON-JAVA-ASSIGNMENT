@@ -1,0 +1,159 @@
+                                        Array in Java & Concepts-02 [Assignment Questions/Answers]     02 Feb’23
+
+ANS 01:
+
+Default Array values in Java:
+
+boolean -> false
+int -> 0
+double -> 0.0 
+String -> null
+User-Defined type -> null
+
+
+ANS 02:
+
+No,You can't use a negative integer as a size, the size of an array represents the number of elements in it.
+still if you do so, the program gets compiled without issues but, while  executing it generates a runtime exception of type "NegativeArraySizeException"
+
+Example:
+
+Public class Test{
+
+public static void main(String[] args){
+
+int []a = new int[-3];
+System.out.println(a);
+
+     }
+}
+
+
+output-> Exception in thread "main" java.lang.NegativeArraySizeException: -3
+	at Arrays.ArrrayIndexOutOfBoundExceptions.main(ArrrayIndexOutOfBoundExceptions.java:33)
+
+
+
+
+ANS 03:
+
+Array stored in heap memory or heap area in JVM.
+In java reference types are stored in the heap area.as arrays are also reference types,(they can be created using the "new" keyword ) the are also stored in the Heap area.
+
+
+
+ANS 04:
+
+There are some disadvantages of array-
+* Once we create, the size can't be increased/decreased.
+* It stores  only homogeneous data elements.
+
+Example:
+ int num[] = {3,4,5,6}; //We can't enter any String value in the int. Only Integers allow!
+String names[] = {"NAVIN REDDY", "HYDER ABBAS", "SHRI OM TIWARI ",MANVI TYAGI,}//we can't enter any integer value in the String.
+
+
+ANS 05:
+
+Anonymous Array:-
+An array without a name is called an Anonymous Array.
+This type od Array is created just for instance use.
+
+Example:
+
+package Arrays;
+
+class Calc{
+    public int add(int nums[]){
+        int result =0;
+        for (int n : nums){
+            result=result+n;
+        }
+        return result;
+    }
+
+}
+public class Anonymous {
+    public static void main(String[] args) {
+
+        Calc obj = new Calc();
+        int result = obj.add(new int[]{5,4,6,8}); //Using here new int[] {5,4,6,8} as an Anonymous
+        System.out.println(result);
+    }
+
+}
+
+
+
+
+
+ANS 06:
+
+Generally we use -
+*for Loop
+*Enhanced for loop
+
+Example:
+
+A) for loop:
+ 
+//Using 1-D------>
+String Student[] = {"SHRI","HARI","VISHNU"};
+
+        for (int i = 0; i < Student.length; i++) {
+            System.out.println( Student[i]);
+
+B) Enhanced for loop:
+
+//Using 1-D---->
+      int numss[] = {3, 4, 6, 7};
+        for (int n : numss) {
+            System.out.println(n);
+
+
+//Enhanced for loop Using 2-D Array:
+
+     int nums[][] = {
+                {5, 2, 8, 6},
+                {9, 7, 6, 7},
+                {2, 8, 0, 3}
+        };
+
+        for (int a[] : nums) {
+
+            for (int b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.println();
+}
+
+
+
+
+ANS 07:
+
+length VS length() :
+
+*length is a final variable application for arrays.With the help of the length variable, we can obtain the size of the array.
+*The java length variable describes the size of an array.
+
+*length() method is a final variable which is applicable for String objects. The length() method returns the number of characters presents in the String.
+*length() methods tells you how many characters a text String contains.
+
+EXAMPLE:
+
+//length:   
+
+     int Student[] = {5,6,7,9};
+      System.out.println(Student.length);
+
+
+//length()
+
+    String name[] = {"iNEURON", "PW the Emotions"," SHRI OM"};
+      System.out.println(name[0].length());
+      System.out.println(name[1].length());
+      System.out.println(name[2].length());
+
+
+
