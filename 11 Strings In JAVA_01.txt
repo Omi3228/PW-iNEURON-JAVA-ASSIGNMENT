@@ -1,0 +1,64 @@
+                                            Strings Concepts in JAVA [Assignment Questions/Answers]     03 Feb’23
+
+
+ANA 01:
+
+STRINGS:
+
+Strings in java is a collection of characters. It is inbuilt class in java. String treated as object,allocate memory in heap area.
+String is refered as the collection of characters,which are inclose within double cots.It refer as a String in java
+
+Example: "abcd" , "#123A@" , "a" , "123"
+
+String names = "PWSKILLS" 
+
+String -> object -> heap -> java.lang.String
+
+
+ANS 02:
+
+Types of String in JAVA:
+There are two types of String in Java:
+
+a) Immutable String: It is non-changable, It can't Change.
+
+ex: String brand = "PwSkills";
+
+b) Mutable: It is changable,It can change.
+
+ex: StringBuilder brand = new StringBuilder ("PwSkills"); 
+
+
+ANS 03:
+
+There are some way to create an String object in java:
+
+1- String VarName = new String("PW")
+
+2- char []ch  = {'P','W'};
+     String VarName = new String (ch);
+
+
+ANS 04:
+
+String Constant Pool:
+
+String Pool in Java is a special storage apace in java Heap memory where String literals sre stored. It is also known by names- String Constant Pool or String Intern Pool. Whenever a String literal is created,the JVM first checks the String Constant Pool before creating a new string object Corresponding to it.
+It is an area in heap memory where java stores literal String values.The heap is an area of memory used for run-time operations.When a new variable iscreated and given a value,Java checks to see if the exact value exists in the pool.   
+
+
+ANS 05:
+
+Immutable Objects:->  The immutable objects are objects whose value can not be changed after inilization.We can not change anything once the objects is created. For Ex.- primitive objects such as int, long,float,double all lagecy classes, Wrapper class,String class,etc.
+
+String s1 = "PWSkills";
+
+Mutable Objects:->  The Mutable objects are objects whose value can be changed after initialization.We can change the object's values,such as field and states,after the object is created, Foe Ex.- Java.util.Date, StringBuilder, StringBuffer, etc.
+
+StringBuilder brand = new StringBuilder("PwSkills");
+
+
+Ans 06:
+
+String pool is a storage space in the Java heap memory where Strring literals are stored . It is also known as String Constant pool/String Intern pool. it is privately maintained by the Java String class.
+String constant pool belongs to the permanent generation area of Heap memory. String Constant Pool is a part of Heap area. String Constant pool not allowed Duplicates.
