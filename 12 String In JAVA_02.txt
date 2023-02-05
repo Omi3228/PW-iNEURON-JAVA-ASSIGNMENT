@@ -1,0 +1,202 @@
+                                           Strings Concepts in JAVA [Assignment Questions/Answers]     04 Feb’23
+
+ANS 01:
+
+import java.util.Scanner;
+
+public class TakingInput {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+         System.out.println("Enter any String Value:");
+           String str = sc.nextLine();
+
+        System.out.println("You Entered:"+ " "  +str);
+
+    }
+
+}
+
+
+RESULT/OUTPUT ->
+
+Enter any String Value:
+ PW FAMILY
+You Entered:  PW FAMILY
+
+
+
+
+
+ANS 02:
+ 
+      package StringConcepts;
+
+public class concatStr {
+    public static void main(String[] args) {
+
+        String str1 = "PHYSICS";
+        String str2 = "WALLAH";
+
+        String str = str1 + str2;          //Using  "+ " Concatenation.
+        System.out.println(str);
+
+
+        String sttr1 = "Physics";
+        String sttr2 = "Wallah";
+
+       String  sttr = sttr1.concat(sttr2);            //Using  "concat() " Concatenation.
+        System.out.println(sttr);
+
+    }
+
+}
+
+RESULT/OUTPUT ->
+ 
+PHYSICSWALLAH
+PhysicsWallah
+
+
+
+
+
+ANS 03:
+
+Find The length of a string in java.
+
+Using the length() method we find the length of any string.
+
+Example:
+
+public class findlength {
+
+    public static void main(String[] args) {
+
+        String str = "PW JAVA & DSA With System Design";
+        System.out.println(str);
+        
+       int str1 = str.length();
+        System.out.println(str1);
+
+    }
+}
+RESULT/OUTPUT -> PW JAVA & DSA With System Design
+                                      32
+
+
+
+
+
+
+ANS 04:
+
+To compare Strings in java use use following approaches.
+
+* "==" operator (It compares the reference of the objects)
+* "equals()" method (It compares the content of two objects)
+
+Example:
+
+// Using == Operator ->
+
+public class Comparison {
+    public static void main(String[] args) {
+
+        String s1 = "PW Java";
+        String s2 = "PW Java";      
+        String s3 = new String( "PwJava");
+
+        System.out.println(s1 == s2);  //Here s1 and s2 compare reference
+        System.out.println(s1 == s3);
+        System.out.println(s3 == s2);
+
+// Using equals() method ->
+        System.out.println(s1.equals(s2)); //Here s1 and s2 compare the actual value
+        System.out.println(s2.equals(s3));
+
+
+    }
+
+}
+RESULT/OUTPUT -> 
+true
+false
+false
+true
+false
+
+
+
+
+
+
+ANS 05:
+
+
+public class LenthExmplProg {
+    public static void main(String[] args) {
+
+     //  Given String "refrigerator"
+
+           String exmp = "refrigerator";
+           int exmp1 = exmp.length();
+        System.out.println(exmp1);
+        
+    }
+
+}
+RESULT/OUTPUT ->  12
+
+
+
+
+
+
+ANS 06:
+
+public class Test {
+    public static void main(String[] args) {
+
+
+    String str = "umbrella";
+        System.out.println(str.contains("e"));  // it throw boolean value
+
+       // or 
+                
+        boolean str1 = str.contains("e");
+        System.out.println(str1);
+}
+}
+RESULT/OUTPUT -> true
+
+
+
+
+
+
+ANS 07: program to remove Consonents from given String----->
+
+
+class removeConsonents {
+
+    static String remVowel(String str)
+
+    {
+        return str.replaceAll("[BCDFGHJKLMNPQRSTVXZbcdfghjklmnpqrstvxz]", "");
+
+    }
+
+    // Driver method to test the above function
+
+    public static void main(String[] args)
+
+    {
+        String str =  "Hello,have a good day";
+        
+        System.out.println(remVowel(str));
+
+    }
+}
+
+RESULT/OUTPUT -> eo,ae a oo ay
