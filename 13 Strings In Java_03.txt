@@ -1,0 +1,300 @@
+                                           Strings Concepts in JAVA [Assignment Questions/Answers]     05 Feb’23
+
+
+
+
+PROGRAM 01:
+
+public class removeDuplicates {
+
+
+        public static void removeDuplicates(char s[], int n)
+        {
+            String ans="";
+            int i,j;
+            for(i=0;i<n;i++){
+                for(j=0;j<i;j++){
+                    if(s[i]==s[j]){
+                        break;     // We are breaking here because this character is already
+                    }              // added to our answer because it was found earlier
+
+                }
+                if(j==i){          // The loop ends without breaking, it means this
+                    ans+=s[i];     // is the first occurrence of this character in the string
+                }                  // so we add this character to our answer
+            }
+            System.out.print(ans);
+        }
+        public static void main(String[] args)
+        {
+            char s[] = "PPWWJJAAVVAAA".toCharArray();
+            int n = s.length;
+            removeDuplicates(s, n);
+        }
+    }
+
+
+
+
+
+
+
+PROGRAM 02:
+
+public class duplicateChareterFromString {
+
+    public static void main(String arg[]) {
+
+
+        String str = "beautiful beach";
+        char[] carray = str.toCharArray();
+        System.out.println("The string is: " + str);
+        System.out.print("Duplicate Characters in above string are: ");
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i + 1; j < str.length(); j++) {
+                if (carray[i] == carray[j]) {
+                    System.out.print(carray[j] + " ");
+                    break;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+PROGRAM 03:
+
+
+public class PalindromeProgram {
+
+    public static void main(String[] args) {
+
+        String str1 = "2552";
+        String str2 ="";
+
+        for (int i = str1.length()-1; i>=0; i--){
+            str2 = str2 + str1.charAt(i);
+
+        }
+        if (str1.equals(str2)){
+            System.out.println("Given String is a palindrom:");
+        }
+        else{
+            System.out.println("Given String is not a palindrom:");
+        }
+    }
+}
+
+
+
+
+
+
+PROGRAM 04:
+
+import java.io.*;
+public class CountConsonentVowelSpeclChar {
+
+    // Java Program to count vowels, consonant, digits and
+// special character in a given string
+
+
+
+
+        // Function to count number of vowels, consonant and special character in a string.
+        static void countCharacterType(String str)
+        {
+            // Declare the variable vowels, consonant, digit
+            // and special characters
+            int vowels = 0, consonant = 0, specialChar = 0;
+
+
+            // str.length() function to count number of
+            // character in given string.
+            for (int i = 0; i < str.length(); i++) {
+
+                char ch = str.charAt(i);
+
+                if ( (ch >= 'a' && ch <= 'z') ||
+                        (ch >= 'A' && ch <= 'Z') ) {
+
+                    // To handle upper case letters
+                    ch = Character.toLowerCase(ch);
+
+                    if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                            ch == 'o' || ch == 'u')
+                        vowels++;
+                    else
+                        consonant++;
+                }
+
+                else
+                    specialChar++;
+            }
+
+            System.out.println("Vowels: " + vowels);
+            System.out.println("Consonant: " + consonant);
+
+            System.out.println("Special Character: " + specialChar);
+        }
+
+        // Driver function.
+        static public void main (String[] args)
+        {
+            String str = "PHYSICS WALLAH AND iNEURON BOTH ARE ROCK!";
+
+            countCharacterType(str);
+        }
+    }
+
+
+
+
+
+
+
+
+PROGRAM 05:
+
+import java.util.Arrays;
+
+public class AnagramProgram {
+    public static void main(String[] args) {
+
+        String str1 = "School Master";
+        String str2 = "The Class Room";
+
+        str1 = str1.replace(" ","");
+        str2 = str2.replace(" ","");
+
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+
+        char []arr1 = str1.toCharArray();
+        char []arr2 = str2.toCharArray();
+
+        Arrays.sort(arr1);
+        System.out.println(arr1);
+        Arrays.sort(arr2);
+
+        if(Arrays.equals(arr1,arr2)){
+            System.out.println("Given String is an Anagram: ");
+        }else {
+            System.out.println("Given String is not An Anagram");
+        }
+
+    }
+}
+
+
+
+
+
+
+
+PROGRAM 06:
+
+public class Pangramprogram {
+    public static void main(String[] args) {
+
+      boolean flag = false;
+        String str = "THE QUICK BROWN FOX JUMPS OVER LAZY DOG";
+        str = str.replace(" ", "");
+
+        char []ch = str.toCharArray();
+
+        int ar[] = new int[26];
+        for (int i = 0; i < ch.length; i++) {
+            ar[ch[i] - 65]++;
+        }
+        for (int i = 0; i < ar.length; i++) {
+            if (ar[i] == 0) {
+
+                System.out.println("It is not Pangram:");
+                flag= true;
+            }
+        }
+        if (flag == false) {
+            System.out.println("It is an pangram");
+        } 
+
+
+    }
+}
+
+
+
+
+
+PROGRAM 07:
+
+import java.util.*;
+public class ContainsAllUnqChar {
+
+    // Java program to illustrate string with
+// unique characters using brute force technique
+
+
+
+        boolean uniqueCharacters(String str)
+        {
+            // If at any time we encounter 2 same
+            // characters, return false
+            for (int i = 0; i < str.length(); i++)
+                for (int j = i + 1; j < str.length(); j++)
+                    if (str.charAt(i) == str.charAt(j))
+                        return false;
+
+            // If no duplicate characters encountered,
+            // return true
+            return true;
+        }
+
+        public static void main(String args[])
+        {
+            ContainsAllUnqChar obj = new ContainsAllUnqChar();
+            String input = "IAmPwLover123";
+
+            if (obj.uniqueCharacters(input))
+                System.out.println("The String " + input + " has all unique characters");
+            else
+                System.out.println("The String " + input + " has duplicate characters");
+        }
+    }
+
+
+
+
+
+
+PROGRAM 08:
+
+
+public class MaxOccurChar {
+
+
+        static char maxOccurringChar(String str) {
+            char ans = 'a';
+            int maxfreq = 0, n = str.length();
+            int count[] = new int[256];
+            for (int i = 0; i < n; i++) {
+                count[str.charAt(i)]++;
+                if (count[str.charAt(i)] > maxfreq) {
+                    maxfreq = count[str.charAt(i)];
+                    ans = str.charAt(i);
+                }
+            }
+            return ans;
+        }
+        public static void main(String[] args) {
+            String str = "Hii iNeuron, Hii Pw";
+            System.out.println("Maximum occurring character is " + maxOccurringChar(str));
+        }
+    }
+
+
