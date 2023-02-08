@@ -1,0 +1,139 @@
+                                                Strings Concepts in JAVA [Assignment Questions/Answers]     06 Feb’23
+
+
+
+
+
+PROGRAM 01:
+
+MUTABLE STRING:
+Mutable strings are those strings whose content can be changed without creating a new object. StringBuffer and StringBuilder are mutable versions of String in java, whereas the java String class is immutable. Immutable objects are those objects whose contents cannot be modified once created.
+
+
+
+EX:-
+
+public class MutableString
+{
+    public static void main (String[] args)
+    {
+        StringBuffer str1 = new StringBuffer("iNeuron");
+        StringBuilder str2 = new StringBuilder("Learning");
+        
+        System.out.println("Value of str1 before change :" + str1);
+        System.out.println("Value of str2 before change :" + str2);
+        
+        str1.append(".com");
+        str2.append(" the JAVA Daily");
+        
+        System.out.println("Value of str1 after change :" + str1);
+        System.out.println("Value of str2 after change :" + str2);
+    }
+}
+
+
+
+
+
+
+
+PROGRAM 02:
+
+public class reversingString {
+    public static void main(String[] args) {
+
+        String str1 = "PWSKILLS";
+        String str2 = " ";
+
+        for (int i = str1.length()-1; i>=0; i--){
+          str2 = str2+str1.charAt(i);
+
+
+        }
+        System.out.println( "After Reversing: " +str2);
+
+     }
+}
+
+
+
+
+
+
+PROGRAM 03:
+
+public class reversingStringS {
+    public static void main(String[] args) {
+
+
+        String str1 = "Think Twice";
+        String str2 = " ";
+
+        String arr[] = str1.split(" ");
+
+
+      for (String elm : arr){
+
+          for (int i = elm.length()-1; i>=0; i--){
+              str2 = str2+elm.charAt(i);
+          }
+          str2 = str2+" ";
+
+        }
+        System.out.println( "After Reversing: " +str2);
+
+    }
+}
+
+
+
+
+
+
+
+
+PROGRAM 04:
+
+// Importing Arrays class from java.util package
+import java.util.Arrays;
+
+
+
+    // Java program to Sort a String Alphabetically
+// Using toCharArray() method
+// With using the sort() method
+
+
+    // Main class
+    public class sortAlpha {
+        // Method 1
+        // To sort a string alphabetically
+        public static String sortString(String inputString)
+        {
+            // Converting input string to character array
+            char tempArray[] = inputString.toCharArray();
+
+            // Sorting temp array using
+            Arrays.sort(tempArray);
+
+            // Returning new sorted string
+            return new String(tempArray);
+        }
+
+        // Method 2
+        // Main driver method
+        public static void main(String[] args)
+        {
+            // Custom string as input
+            String inputString = "quickbrownfoxjumpsoverthelazydog";
+            String outputString = sortString(inputString);
+
+            // Print and display commands
+
+            // Input string
+            System.out.println("Input String : " + inputString);
+            // Output string
+            System.out.println("Output String : "
+                    + outputString);
+        }
+    }
