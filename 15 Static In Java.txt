@@ -1,0 +1,204 @@
+                                                Static Concepts in JAVA [Assignment Questions/Answers]  07 Feb’23
+
+
+
+ANS 01:
+
+ The static keyword in Java is mainly used for memory management. The static keyword in Java is used to share the same variable or method of a given class. The users can apply static keywords with variables, methods, blocks, and nested classes. The static keyword belongs to the class than an instance of the class. The static keyword is used for a constant variable or a method that is the same for every instance of a class.
+
+The static keyword is a non-access modifier in Java that is applicable for the following: 
+
+-> Blocks
+-> Variables
+-> Methods
+-> Classes
+
+
+
+Example:
+
+class Demo{
+
+    static int a;
+    static int b;
+
+    int m;
+    int n;
+
+    static {
+
+        a=10;
+        b=20;
+        System.out.println("Control in static block");
+    }
+    {
+        m=100;
+        n=200;
+        System.out.println("Control is non-static block");
+    }
+
+    static void disp1(){
+
+        System.out.println("Value of Static var" +a);
+        System.out.println("Value of Static var" +b);
+    }
+
+    void disp2(){
+        System.out.println("Value of instance var" +m);
+        System.out.println("Value of instance var" +n);
+    }
+
+
+}
+public class StaticExmpl_04 {
+
+    public static void main(String[] args) {
+
+        Demo d = new Demo();
+
+        Demo.disp1();
+       //Demo.disp2();      //invalid, because you cant call directly using class,you can call using object name.
+       d.disp2();
+
+
+    }
+}
+
+
+OUTPUT:
+
+Control in static block
+Control is non-static block
+Value of Static var10
+Value of Static var20
+Value of instance var100
+Value of instance var200
+
+
+
+
+ANS 02:
+
+            The Java ClassLoader is a part of the Java Runtime Environment that dynamically loads Java classes into the Java Virtual Machine. The Java run time system does not need to know about files and file systems because of classloaders. Java classes aren’t loaded into memory all at once, but when required by an application. At this point, the Java ClassLoader is called by the JRE and these ClassLoaders load classes into memory dynamically.
+* LOADING
+* LINKING 
+* INITIALIZATION
+
+Java, being a platform-independent programming language, doesn’t work on the one-step compilation. Instead, it involves a two-step execution, first through an OS-independent compiler; and second, in a virtual machine (JVM) which is custom-built for every operating system. 
+
+The two principal stages are explained below:
+* COMPILATION
+* EXECUTION
+
+
+
+ANS 03:
+
+            You can use Static only on local variables. This means the declaration context for a Static variable must be a procedure or a block in a procedure, and it cannot be a source file, namespace, class, structure, or module. You cannot use Static inside a structure procedure.
+
+
+
+ANS 04:
+
+           The static blocks always execute first before the main() method in Java because the compiler stores them in memory at the time of class loading and before the object creation. Here, the compiler executes all the static blocks first, and after finishing the static block execution, it invokes the main() method.
+
+
+
+
+ANS 05:
+
+            A static method is a method that belongs to a class rather than an instance of a class. This means you can call a static method without creating an object of the class. Static methods are sometimes called class methods.
+A static method in Java is a method that is part of a class rather than an instance of that class. Every instance of a class has access to the method. Static methods have access to class variables (static variables) without using the class's object (instance). Only static data may be accessed by a static method.
+
+
+
+
+ANS 06:
+
+              The static blocks can be used for initializing static variables or calling any static method in java. The instance blocks can be used for initializing instance variables or calling any instance method in java. Static blocks execute during the loading of its dot class (. class) file in memory.
+ 
+A static block, or static initialization block, is code that is run once for each time a class is loaded into memory. It is useful for setting up static variables or logging, which would then apply to every instance of the class.
+
+
+
+class Test {
+ 
+    // Case 1: Static variable
+    static int i;
+    // Case 2: non-static variables
+    int j;
+ 
+    // Case 3: Static block
+    // Start of static block
+    static
+    {
+        i = 10;
+        System.out.println("static block called ");
+    }
+    // End of static block
+}
+ 
+// Class 2
+// Main class
+class blok {
+ 
+    // Main driver method
+    public static void main(String args[])
+    {
+ 
+        // Although we don't have an object of Test, static
+        // block is called because i is being accessed in
+        // following statement.
+        System.out.println(Test.i);
+    }
+}
+
+
+
+
+
+
+
+ANS 07:
+
+STATIC VARIABLE:
+
+A static variable is a property of a class.	
+An instance variable is a property of an instance.
+A static variable is created only once when the classloader loads the class.
+
+
+INSTANCE VARIABLE:
+An instance variable is created everytime an instance is created.
+A static variable is used when you want to store a value that represents all the instances like count, sum, average etc.
+An instance variable is used to store a value that represents property of single instance.
+
+
+
+EXAMPLE:
+public class Order{
+	//static variable
+	static int countOfOrders;
+	//instance variable
+	String orderId;
+
+
+	public static void main(String args[]){
+		Order orderInst = new Order();
+		//Assigning to static variable
+		Order.countOfOrders = 10;
+		//Assigning to instance variable
+		orderInst.orderId="3578923";
+		String name="Jan";//simple local variable. it is not instance and not static.
+	}
+}
+
+
+
+
+
+ANS 08:
+
+             A static method is a class method and belongs to the class itself. This means you do not need an instance in order to use a static method. 
+
+A non-static method is an instance method and belongs to each object that is generated from the class.
