@@ -23,6 +23,7 @@ Data hiding means hiding the internal data within the class to prevent its dire
 ANS 02:
 
 Encapsulation in Java refers to integrating data (variables) and code (methods) into a single unit. In encapsulation, a class's variables are hidden from other classes and can only be accessed by the methods of the class in which they are found.
+
 Encapsulation is one of the key features of object-oriented programming. Encapsulation refers to the bundling of fields and methods inside a single class. It prevents outer classes from accessing and changing fields and methods of a class. This also helps to achieve data hiding.
  
 
@@ -41,7 +42,7 @@ While Setter sets or updates the value (mutators). It sets the value for any var
 
 
 
-EX:
+EXAMPLE:
 // Java Program to Illustrate Getter and Setter
 
 // Importing input output classes
@@ -97,7 +98,7 @@ THIS Keyword:
 
  this keyword would always point to current object, and this variable would hold the  address the active object present in the heap memory.
 
-EX:
+EXAMPLE:
 
 class Student
 
