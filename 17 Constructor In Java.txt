@@ -1,0 +1,184 @@
+                                           Constructor Concepts in JAVA [Assignment Questions/Answers]  10 Feb’23
+
+
+
+ANS 01:
+
+Constructor:
+Object creation is not enough , compulsorily we should perform initialization then only the object is in a position to provide the response.
+
+Whenever we are creating an object some piece of the code will be executed automatically to perform initialization of an object. This piece of code in nothing but a constructor.
+
+Main objective of the constructor is nothing but initialisation of object.
+
+Syntax:
+
+class PW
+{   
+  .......
+
+  // A Constructor
+  PW() {
+  }
+
+  .......
+}
+
+// We can create an object of the above class
+// using the below statement. This statement
+// calls above constructor.
+PW obj = new PW(); 
+
+
+
+
+
+ANS 02:
+
+Constructor Chaining:
+
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object. 
+
+One of the main use of constructor chaining is to avoid duplicate codes while having multiple constructor (by means of constructor overloading) and make code more readable.
+
+Constructor chaining can be done in two ways: 
+ 
+1) Within same class: It can be done using this() keyword for constructors in the same class
+2) From base class: by using super() keyword to call the constructor from the base class.
+
+Constructor chaining occurs through inheritance. A sub-class constructor’s task is to call super class’s constructor first. This ensures that the creation of sub class’s object starts with the initialization of the data members of the superclass. There could be any number of classes in the inheritance chain. Every constructor calls up the chain till the class at the top is reached.
+
+
+
+
+
+ANS 03:
+
+Yes, you can call the methods of the superclass from static methods of the subclass (using the object of subclass or the object of the superclass).
+ 
+ 
+To explicitly call the superclass constructor from the subclass constructor, we use super() . It's a special form of the super keyword. super() can be used only inside the subclass constructor and must be the first statement.
+
+
+
+
+
+
+ANS 04:
+
+If we add a return type to a constructor, then it will become a method of the class. This is the way java runtime distinguish between a normal method and a constructor.
+        The constructor cannot have a return type. It should create and return new object. Hence it would give compilation error.
+
+
+
+
+
+ANS 05:
+
+The constructor does not accept any parameters. Hence, it is known as a no-arg constructor. Notice that we have declared the constructor as private. Once a constructor is declared private , it cannot be accessed from outside the class.
+
+The arguments of a constructor can only be found by type, not by name, so there is no way for the framework to reliably match properties to constructor args. Therefore, they require a no-arg constructor to create the object, then can use the setter methods to initialise the data
+
+class Company {
+  String name;
+
+  // public constructor
+  public Company() {
+    name = "iNEURON";
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    // object is created in another class
+    Company obj = new Company();
+    System.out.println("Company name = " + obj.name);
+  }
+}
+
+
+
+
+
+ANS 06:
+
+The constructor does not accept any parameters. Hence, it is known as a no-arg constructor. Notice that we have declared the constructor as private. Once a constructor is declared private , it cannot be accessed from outside the class.
+
+
+A default constructor is a 0 argument constructor which contains a no-argument call to the super class constructor. To assign default values to the newly created objects is the main responsibility of default constructor.
+
+
+
+
+
+ANS 07:
+
+As construction overloading enables the creation of the object of a specific class in several ways, it is most commonly used in Java programs based on the requirement of the programmer. With the use of constructor overloading, objects can be initialized with different data types.
+  
+Constructor in java is used to create the instance of the class. Constructors are almost similar to methods except for two things - its name is the same as the class name and it has no return type. Sometimes constructors are also referred to as special methods to initialize an object.
+
+
+
+
+
+
+ANS 08:
+
+A default constructor in Java is created automatically by the Java compiler when the programmer doesn't create any constructor in the entire program. It is created to assign the default values to the instance variables of the class when an object is created.
+
+ 
+A constructor is called "Default Constructor" when it doesn't have any parameter.
+
+Syntax of default constructor:
+<class_name>(){}  
+
+
+EXAMPLE 01:-------------------------------------->
+
+//Java Program to create and call a default constructor  
+class Bike1{  
+
+//creating a default constructor  
+Bike1(){
+System.out.println("Bike is created");
+}  
+
+//main method 
+
+public static void main(String args[]){  
+
+//calling a default constructor  
+Bike1 b=new Bike1();  
+}  
+}  
+
+OUTPUT: Bike is created
+
+
+
+EXAMPLE 02:---------------------------------------->
+
+//Let us see another example of default constructor  
+//which displays the default values  
+class Student3{  
+int id;  
+String name; 
+ 
+//method to display the value of id and name  
+void display(){System.out.println(id+" "+name);}  
+  
+public static void main(String args[]){ 
+ 
+//creating objects  
+Student3 s1=new Student3();  
+Student3 s2=new Student3();  
+//displaying values of the object  
+s1.display();  
+s2.display();  
+}  
+}  
+
+OUTPUT: 
+0 null
+0 null
