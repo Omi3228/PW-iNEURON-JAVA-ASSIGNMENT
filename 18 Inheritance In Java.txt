@@ -24,8 +24,7 @@ ANS 03:
 
  Inheritance can be implemented or achieved by using two keywords:
 
--> extends: extends is a keyword that is used for developing the inheritance between two classes and two
-interfaces.
+-> extends: extends is a keyword that is used for developing the inheritance between two classes and two interfaces.
 
 -> implements: implements keyword is used for developing the inheritance between a class and interface.
 
@@ -33,6 +32,8 @@ interfaces.
 
 
 ANS 04:
+
+Polymorphism:
 
 Polymorphism in OOP is the ability of an entity to take several forms. In other words, it refers to the ability of
 an object (or a reference to an object) to take different forms of objects. It allows a common data-gathering
@@ -58,6 +59,7 @@ a. Argument type must be different (at least order) in overloading.
 b. In overriding, argument type must be the same (including order).
 
 3. Method signature:
+
 a. The signature of the overloaded method must be different.
 b. The signature of the overriding method must be the same.
 
@@ -114,12 +116,15 @@ Ans: The abstract method is incomplete while the final method is regarded as com
 an abstract method is by overriding it, but you cannot override a final method in Java.
 
 Ex:
+
  final class A {
     public abstract void methodOne();
 }
 
 abstract class A {
-    public final void methodOne() {}
+    public final void methodOne() {
+
+      }
 }
 
 
